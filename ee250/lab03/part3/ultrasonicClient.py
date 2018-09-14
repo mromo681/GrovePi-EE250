@@ -42,7 +42,7 @@ def startClient():
         msg = str(ultrasonic)
         # for UDP, sendto() and recvfrom() are used instead
         s.sendto(msg.encode('utf-8'), server) 
-        print("RPi: " + ultrasonic + " cm")
+        print("RPi: " + msg + " cm")
         time.sleep(0.2)
     s.close()
 
