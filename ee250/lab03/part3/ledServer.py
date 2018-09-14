@@ -36,7 +36,7 @@ def startServer():
 		elif data == "LED_OFF":
 			grovepi.digitalWrite(led,0)
 			msg = "LED_OFF Success"
-		else
+		else:
 			msg = "Command Not Recognized"
 		print("-> "+msg)
 		c.send(msg.encode('utf-8'))
