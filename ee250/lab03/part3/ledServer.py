@@ -33,7 +33,7 @@ def startServer():
 		if data == "LED_ON":
 			grovepi.digitalWrite(led,1)
 			msg = "LED_ON Success"
-		else if data == "LED_OFF":
+		elif data == "LED_OFF":
 			grovepi.digitalWrite(led,0)
 			msg = "LED_OFF Success"
 		else
