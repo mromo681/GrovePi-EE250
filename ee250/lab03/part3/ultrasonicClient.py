@@ -5,6 +5,7 @@
 # Server running on your VM via UDP packets. 
 
 import sys
+import time
 # By appending the folder of all the GrovePi libraries to the system path here,
 # we are able to successfully `import grovepi`
 sys.path.append('../../../Software/Python/')
