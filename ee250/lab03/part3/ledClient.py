@@ -5,7 +5,7 @@
 import socket
 
 def startClient():
-	host = '10.0.2.15'
+	host = '192.168.1.20'
 	port = 5000
 
 	s = socket.socket() #by default, the socket constructor creates an TCP/IPv4 socket
