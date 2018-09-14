@@ -30,10 +30,10 @@ def startServer():
 		if not data:
 			break
 		print("VM: "+data)
-		if(data == "LED_ON")
+		if data == "LED_ON":
 			grovepi.digitalWrite(led,1)
 			msg = "LED_ON Success"
-		else if(data == "LED_OFF")
+		else if data == "LED_OFF":
 			grovepi.digitalWrite(led,0)
 			msg = "LED_OFF Success"
 		else
