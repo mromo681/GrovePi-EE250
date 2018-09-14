@@ -4,7 +4,7 @@ def Main():
     # Change the host and port as needed. For ports, use a number in the 9000 
     # range. 
     host = '192.168.1.20'
-    port = 8050
+    port = 5001
 
     server_addr = '192.168.0.147'
 
