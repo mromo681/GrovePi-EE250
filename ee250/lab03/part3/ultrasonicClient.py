@@ -33,10 +33,9 @@ def startClient():
 
     # UDP is connectionless, so a client does not formally connect to a server
     # before sending a message.
-    dst_port = 8050
+    server = (server_addr, 8050)
     while True:
         #tuples are immutable so we need to overwrite the last tuple
-        server = (server_addr, int(dst_port))
 
         ultrasonic = grovepi.ultrasonicRead(ultrasonic_ranger)
 
