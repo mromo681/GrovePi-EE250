@@ -39,8 +39,9 @@ def startClient():
 
         ultrasonic = grovepi.ultrasonicRead(ultrasonic_ranger)
 
+        msg = str(ultrasonic)
         # for UDP, sendto() and recvfrom() are used instead
-        s.sendto(ultrasonic, server) 
+        s.sendto(msg.encode('utf-8'), server) 
         print("RPi: " + ultrasonic + " cm")
         time.sleep(0.2)
     s.close()
