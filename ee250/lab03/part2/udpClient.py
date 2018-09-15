@@ -6,7 +6,7 @@ def Main():
     host = '192.168.1.20'
     port = 5001
 
-    server_addr = '192.168.56.1'
+    server_addr = '192.168.0.147'
 
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) 
     s.bind((host,port))
