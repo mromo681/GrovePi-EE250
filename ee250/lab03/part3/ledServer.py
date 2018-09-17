@@ -1,3 +1,11 @@
+# EE 250 Lab 3
+#
+# Github Repo:
+#	
+# Team Members: 
+#	Jeffrey Loh
+#	Martin Romo
+
 # LED Server
 # 
 # This program runs on the Raspberry Pi and accepts requests to turn on and off
@@ -18,8 +26,8 @@ def startServer():
 	grovepi.pinMode(led,"OUTPUT")
 	time.sleep(1)
 
-	host = '192.168.1.20'
-	port = 5000
+	host = '192.168.1.20' # RPI IP Address
+	port = 5000 # Port to use
 
 	s = socket.socket()
 	s.bind((host,port))
