@@ -23,11 +23,11 @@ def startServer():
     s.bind((host,port))
 
     while True:
-		# Receive data from client
+        # Receive data from client
         data, addr = s.recvfrom(1024)
         data = data.decode('utf-8')
-		
-		# Print the received data to terminal
+        
+        # Print the received data to terminal
         print("VM: " + data + " cm")
     s.close()
 

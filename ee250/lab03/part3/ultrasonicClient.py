@@ -28,20 +28,20 @@ def startClient():
     port = 5001 # Port to use
 
     server_addr = '192.168.0.147' # Host OS IP Address
-	server_port = 8050
+    server_port = 8050
 
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) 
     s.bind((host,port))
 
     # Grove Ultrasonic Ranger connected to digital port D2
     ultrasonic_ranger = 2
-	
+    
     server = (server_addr, server_port)
     while True:
-		# Get ultrasonic reading
-		ultrasonic = grovepi.ultrasonicRead(ultrasonic_ranger)
+        # Get ultrasonic reading
+        ultrasonic = grovepi.ultrasonicRead(ultrasonic_ranger)
         msg = str(ultrasonic)
-		
+        
         # for UDP, sendto() and recvfrom() are used instead
         s.sendto(msg.encode('utf-8'), server) 
         print("RPi: " + msg + " cm") # Print reading on client terminal
