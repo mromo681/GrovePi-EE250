@@ -26,7 +26,7 @@ def startServer():
 	grovepi.pinMode(led,"OUTPUT")
 	time.sleep(1)
 
-	host = '192.168.1.20' # RPI IP Address
+	host = '192.168.1.22' # RPI IP Address
 	port = 5000 # Port to use
 
 	s = socket.socket()

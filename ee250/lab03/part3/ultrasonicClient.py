@@ -24,7 +24,7 @@ import socket
 def startClient():
     # Change the host and port as needed. For ports, use a number in the 9000 
     # range. 
-    host = '192.168.1.20' # RPI IP Address
+    host = '192.168.1.22' # RPI IP Address
     port = 5001 # Port to use
 
     server_addr = '192.168.0.147' # Host OS IP Address
